@@ -1,0 +1,9 @@
+body { margin: 0; }
+table {	border-collapse: collapse; border: 1px #FFFFFF solid; width:100%; }
+th { color: #660000; background-color: #efefef; font-size: 13px; font-weight: normal; }
+td { border: 1px #FFFFFF solid; text-align: right; font-size: 13px; }
+.g { color: #FF0000; }
+.l { color: #008208; }
+.ad { background: url("../../../img/ad.jpg") no-repeat center; width:14px; }
+.dec { background: url("../../../img/dec.jpg") no-repeat center; width: 14px; }
+.symbol_col { display: none; }

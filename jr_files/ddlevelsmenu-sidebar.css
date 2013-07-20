@@ -1,0 +1,60 @@
+/*markermenu 产品分类模块*/
+.markermenu{
+clear: left;
+position: relative;
+background:url(../images/sort_bg.gif) #FFFFFF left bottom no-repeat;
+padding:0 0 14px 0;
+}
+.markermenu p{
+background:url(../images/ico.gif) 0px -650px no-repeat;
+color:#FFFFFF;
+font-size:14px;
+line-height:26px;
+height:26px;
+white-space:nowrap;
+text-indent:15px;
+}
+.markermenu ul{
+background:url(../images/sort_ul_bg.gif) #FFF8E1 left top repeat-y;
+padding:18px 10px 0 10px;
+}
+.markermenu li{
+line-height:18px;
+}
+.markermenu li ul{
+background:none;
+border:0;
+margin-top:0px;
+margin-left:10px;
+padding:0;
+}
+.markermenu ul li a{
+font-size: 12px;
+color:#E44300;
+display: block;
+padding: 0 5px 0 10px;
+height:18px;
+line-height:18px;
+text-decoration: none;
+background:url(../images/ico.gif) left -507px no-repeat;
+font-weight:normal;
+}
+* html .markermenu ul li a{ /*IE6 hack*/
+width: 160px;
+}
+.markermenu ul li a:visited, .markermenu ul li a:active{
+color: #E44300;
+font-weight:normal;
+}
+.markermenu ul li a:hover, .markermenu ul li a.selected{
+color:#E44300;
+font-weight:bold;
+}
+/* ######### Customized Drop Down ULs CSS (inherits from ddlevelsmenu-base.css) ######### */
+.blackwhite li a{
+background: white;
+}
+.blackwhite li a:hover{
+background: black;
+color: white;
+}

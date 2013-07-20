@@ -1,0 +1,42 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=GB2312">
+    <title>欢迎使用霸灵WEB行情</title>
+    <style type="text/css">
+      * { font-size: 13px; }
+      iframe { height: 100%; width: 100%; border-width: 0; }
+    </style>
+    <script type="text/javascript">
+        var cnt = 10;
+        var iid = 0;
+
+       function on_load() {
+           iid = setInterval(timer, 1000);
+       }
+
+       function timer() {
+           if (cnt > 0) {
+               document.getElementById("cnt").innerHTML = "" + (cnt--);
+           } else {
+               clearInterval(iid);
+               loadquo();
+           }
+       }
+
+       function showInfo() {
+           alert('访问www.baring.cn可查看详情。\n技术支持:\nQQ: 25484o936\n电话: 1861o288174');
+       }
+
+       function loadquo() {
+           var frmstr = "<iframe frameborder='0' src='" + document.URL + "?r=1'></iframe>";
+           document.getElementById("target").innerHTML = frmstr;
+       }
+    </script>
+  </head>
+  <body style="margin:0; padding: 0; width: 100%; height: 100%; overflow: hidden;" onload="on_load();">
+    <table style="width: 100%; height: 100%; padding: 0; margin: 0;" border="0" cellpadding="0" cellspacing="0">
+    	<tbody><tr style="height: 14px;"><td>本行情数据由<a href="http://www.ytcj.com/" target="_blank">倚天财经</a>提供</td></tr>
+    	<tr><td><div id="target" style="width:100%; height: 100%;"><iframe src="qjxgold_data/qjxgold.html" frameborder="0"></iframe></div>
+        </td></tr>
+    </tbody></table>
+  
+</body></html>

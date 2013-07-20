@@ -1,0 +1,98 @@
+/* ######### Drop Down ULs CSS ######### */
+.ddsubmenustyle, .ddsubmenustyle ul{ /*topmost and sub ULs, respectively*/
+margin: 0;
+padding: 0;
+position: absolute;
+left: 0;
+top: 0;
+list-style-type: none;
+background:#ffce00;
+border:1px solid #ffe181;
+border-bottom-width: 0;
+visibility: hidden;
+z-index: 100;
+}
+.ddsubmenustyle li{
+float:left;
+clear:both;
+}
+.ddsubmenustyle li a{
+display:block;
+width:150px; /*width of menu (not including side paddings)*/
+color:#E44300;
+background-color:#ffce00;
+text-decoration:none;
+padding:2px 6px;
+border-bottom:1px solid #ffe181;
+}
+* html .ddsubmenustyle li{ /*IE6 CSS hack*/
+display:inline-block;
+width:150px; /*width of menu (include side paddings of LI A*/
+}
+.ddsubmenustyle li a:hover{
+background-color: #ff7b00;
+color:#ffffff;
+text-decoration:none;
+}
+
+
+.ddsubmenustyle1, .ddsubmenustyle1 ul{ /*topmost and sub ULs, respectively*/
+margin: 0;
+padding: 0;
+position: absolute;
+left: 0;
+top: 0;
+list-style-type: none;
+background: white;
+border: 1px solid #ffdc6d;
+border-bottom-width: 0;
+visibility: hidden;
+z-index: 100;
+}
+.ddsubmenustyle1 li{
+float:left;
+clear:both;
+}
+.ddsubmenustyle1 li a{
+display: block;
+height:18px;
+padding:0 20px 0 10px;
+color: #8a8a8a;
+background-color: #fff8e1;
+text-decoration: none;
+border-bottom: 1px solid #ffdc6d;
+font-size:12px;
+width:160px;
+}
+* html .ddsubmenustyle1 li{ /*IE6 CSS hack*/
+display: inline-block;
+width: 160px; /*width of menu (include side paddings of LI A*/
+}
+.ddsubmenustyle1 li a:hover{
+background-color: #fff1c4;
+color:#E44300;
+font-size:  12px;
+text-decoration: none;
+}
+
+
+/* ######### Neutral CSS  ######### */
+.downarrowpointer{ /*CSS for "down" arrow image added to top menu items*/
+padding-left: 4px;
+border: 0;
+}
+.rightarrowpointer{ /*CSS for "right" arrow image added to drop down menu items*/
+position: absolute;
+padding-top:1px;
+left: 100px;
+border: 0;
+}
+.ddiframeshim{
+position: absolute;
+z-index: 500;
+background: transparent;
+border-width: 0;
+width: 0;
+height: 0;
+display: block;
+}
